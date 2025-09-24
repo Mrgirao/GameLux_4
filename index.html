@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameLux - Productos Gaming</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><img src="assets/logo.png" alt="GameLux Logo"/> GameLux</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="register.html" class="primary">Registrarse</a>
+    </nav>
+  </header>
+
+  <main class="catalog">
+    <h2>Productos</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar productos...">
+    </div>
+    <div class="categories">
+      <button class="cat-btn" data-cat="all">Todos</button>
+      <button class="cat-btn" data-cat="consola">Consolas</button>
+      <button class="cat-btn" data-cat="pc">PC Gaming</button>
+      <button class="cat-btn" data-cat="accesorio">Accesorios</button>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 GameLux - Mercado gaming premium</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

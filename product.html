@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del producto - GameLux</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><img src="assets/logo.png" alt="GameLux Logo"/> GameLux</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="register.html" class="primary">Registrarse</a>
+    </nav>
+  </header>
+
+  <main class="product-detail">
+    <div class="detail-card">
+      <img id="detailImage" src="assets/prod1.jpg" alt="Producto">
+      <h2 id="detailTitle">Producto Gamer</h2>
+      <p class="price" id="detailPrice">€99</p>
+      <p class="seller" id="detailSeller">Vendido por Juan</p>
+      <p class="desc" id="detailDesc">Descripción detallada del producto.</p>
+      <button class="primary" onclick="contactSeller()">Contactar vendedor</button>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="secondary" onclick="history.back()">Anterior</button>
+      <button class="secondary" onclick="window.location.href='index.html'">Inicio</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 GameLux - Mercado gaming premium</p>
+  </footer>
+
+  <script>
+    function contactSeller() {
+      alert("¡Mensaje enviado al vendedor!");
+    }
+  </script>
+</body>
+</html>
